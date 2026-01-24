@@ -31,3 +31,72 @@ document.addEventListener('DOMContentLoaded' , function(){
     //start from the first image 
     gotoslide(0);
 })
+
+document.addEventListener('DOMContentLoaded' , function(){
+    const track = document.querySelector('.track');
+    const petslides = Array.from(track.children);
+    const prev_btn = document.querySelector('.prev-btn');
+    const frow_btn = document.querySelector('.forw-btn');
+
+    let currentSlide = 0 ;
+    const totalslides = petslides.length; 
+
+    function slidechange(slide){
+        currentSlide = (slide + totalslides) % totalslides;
+        const size = -currentSlide * 100;
+        track.style.transform = `translateX(${size}%)`;
+    }
+    prev_btn.addEventListener('click' , function(){
+        slidechange(currentSlide + 1);
+    })
+    frow_btn.addEventListener('click' , function(){
+        slidechange(currentSlide - 1);
+    })
+    slidechange(0);
+})
+
+document.addEventListener('DOMContentLoaded' , function(){
+    const track_bike = document.querySelector('.track-bike');
+    const bikeslides = Array.from(track_bike.children);
+    const prev_bike = document.querySelector('.prev-bike');
+    const frow_bike = document.querySelector('.forw-bike');
+
+    let currentSlide = 0 ;
+    const totalslides = bikeslides.length; 
+
+    function bikechange(bike){
+        currentSlide = (bike + totalslides) % totalslides;
+        const b_size = -currentSlide * 100;
+        track_bike.style.transform = `translateX(${b_size}%)`;
+    }
+    prev_bike.addEventListener('click' , function(){
+        bikechange(currentSlide + 1);
+    })
+    frow_bike.addEventListener('click' , function(){
+        bikechange(currentSlide - 1);
+    })
+    slidechange(0);
+})
+
+document.addEventListener('DOMContentLoaded' , function(){
+    const track_phone = document.querySelector('.track-phone');
+    const phoneslides = Array.from(track_phone.children);
+    const prev_phone = document.querySelector('.prev-phone');
+    const frow_phone = document.querySelector('.forw-phone');
+
+    let currentSlide = 0 ;
+    const totalslides = phoneslides.length; 
+
+    function phonechange(phone){
+        currentSlide = (phone + totalslides) % totalslides;
+        const b_size = -currentSlide * 100;
+        track_phone.style.transform = `translateX(${b_size}%)`;
+    }
+    prev_phone.addEventListener('click' , function(){
+        phonechange(currentSlide + 1);
+    })
+    frow_phone.addEventListener('click' , function(){
+        phonechange(currentSlide - 1);
+    })
+    slidechange(0);
+})

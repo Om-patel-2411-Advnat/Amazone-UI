@@ -6,42 +6,72 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style>
+        .w-1\/8 {
+            width: 12.5%;
+    }
+    </style>
 </head>
-<body class="h-100vh w-full flex justify-center p-50 bg-[#1a1a1a]">
-    <div class="h-110 w-100 bg-white text-black ">
-        <div class=" h-full w-full flex flex-col p-3">
-            <p class="pl-2 text-xl font-bold">Revamp your home in style</p>
-            <div class="h-full w-full grid grid-cols-2 grid-rows-2 gap-4 p-2">
-                <div class="h-full w-full ">
-                    <div class="h-[70%] w-full object-cover">
-                        <img src="./images/card-1.jpg">
-                    </div>
-                    <p class="text-xs">Cushion cover,bedsheets & more</p>
-                </div>
-                <div class="h-full ww-full">
-                    <div class="h-[70%] w-full object-cover">
-                        <img src="./images/card-2.jpg">
-                    </div>
-                    <p class="text-xs">Cushion cover,bedsheets & more</p>
-                </div>
-                <div class="h-full w-full ">
-                    <div class="h-[70%] w-full object-cover">
-                        <img src="./images/card-3.jpg">
-                    </div>
-                    <p class="text-xs">Cushion cover,bedsheets & more</p>
-                </div>
-                <div class="h-full w-full">
-                    <div class="h-[70%] w-full object-cover">
-                        <img src="./images/card-4.jpg">
-                    </div>
-                    <p class="text-xs">Cushion cover,bedsheets & more</p>
-                </div>
-            </div>
-            <div class="pl-2 text-sm text-blue-800 hover:text-black ">
-                <a href="#" >Explore more</a>
-            </div>
-        </div>
+<body class="bg-[#1a1a1a] pt-50 px-30">
+ <div class="relative w-full h-60 bg-white">
+
+  <!-- SCROLL AREA -->
+  <div class="carousel h-full overflow-x-auto overflow-y-hidden">
+
+    <div class="carouselTrack flex transition-transform duration-500 ease-in-out">
+
+      <!-- SLIDE -->
+      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
+        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
+        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+      </div>
+
     </div>
+  </div>
+
+  <!-- BUTTONS (FIXED VISUALLY) -->
+  <button class="back absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 p-2 rounded-full">
+    ◀
+  </button>
+
+  <button class="next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 p-2 rounded-full">
+    ▶
+  </button>
+
+</div>
+
+
+
+
+<script src="app.js"></script>
+
 </body>
 </html>
 
