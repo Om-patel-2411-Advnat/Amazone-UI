@@ -14,7 +14,7 @@
             <div class="grid-start-1 col-span-2 sm:grid-start-1 sm:col-span-1 lg:col-start-1 lg:col-span-2 hover-border m-1">
                 <div class="h-[65%] w-[65%] flex items-center pt-5 px-3 sm:h-[75%] sm:w-[75%] lg:h-[85%] lg:w-[85%] lg:px-0">
                     <img src="../images/amazone_logo-1.png">
-                    <p class="pb-1.5 pl-0.5">.in</p>
+                    <p class="pb-1.5 pl-0.5 hidden lg:block">.in</p>
                 </div>
             </div>
             <div class="grid-start-3 col-span-2 sm:grid-start-2 sm:col-span-1 lg:col-start-3 lg:col-span-3 hover-border m-1 mx-4">
@@ -23,15 +23,15 @@
                         <img src="../images/Location_logo-1.svg" class="brightness-0 invert">
                     </div>
                     <div class="flex flex-col gap-0">
-                        <p class="text-stone-400 text-sm sm:text-xs lg:">Deliver to <span class="lg:hidden">Om</span></p>
-                        <p class="text-base font-bold sm:text-sm">Modasa 383315</p>
+                        <p class="text-stone-400 text-sm sm:text-xs hidden lg:block">Deliver to <span class="">Om</span></p>
+                        <p class="text-base flex items-center gap-1 font-bold sm:text-sm">Modasa <span class="hidden sm:block">383315</span></p>
                     </div>
                 </div>
             </div>
             <div class="grid-start-1 col-span-4 sm:grid-start-3 sm:row-start-2 sm:col-span-4 lg:col-start-6 lg:row-start-1 lg:col-span-16">
-                <div class="h-full w-full flex items-center">
+                <div class="h-full w-full flex items-center px-2">
                     <div class="bg-gray-300 h-11 w-13 flex items-center justify-center rounded-l-md text-stone-500 gap-2 text-sm hover:bg-gray-400 hover:text-black">All <i class="fa-solid fa-caret-down"></i></div>
-                    <div class="bg-white text-stone-400  h-11 w-160 xl:w-220 flex items-center pl-2 shrink"> <input type="search" placeholder="Search Amazone.in"> </div>
+                    <div class="bg-white text-stone-400  h-11 flex-1 min-w-0 flex items-center pl-2 shrink"> <input type="search" placeholder="Search Amazone.in"> </div>
                     <div class="bg-amber-400 h-11 w-13 flex items-center justify-center text-xl rounded-r-md text-stone-600 hover:bg-amber-500 hover:text-black"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
             </div>
@@ -39,18 +39,19 @@
                 <div class=" h-full w-full flex items-end justify-center gap-1">
                     <div class="h-full w-full flex items-end gap-0.5 hover-border pr-0.5 pb-1.5">
                         <img src="../images/india-icon.png" class="h-7 w-8">
-                        <p class="text-sm font-bold">EN</p>
+                        <p class="text-sm font-bold hidden lg:block">EN</p>
                     </div>
-                    <p class="pb-1 mr-15 sm:mr-25 lg:mr-2 text-stone-400"><i class="fa-solid fa-caret-down"></i></p>
+                    <p class="pb-1 mr-15 sm:mr-25 lg:mr-2 text-stone-400 hidden lg:block"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
             </div>
             <div class="lg:col-span-3">
                 <div class="h-full w-full flex items-center justify-center gap-2 ">
                     <div class="flex flex-col hover-border py-1.5 px-1">
-                        <p class="text-xs text-stone-400">Hello Om</p>
-                        <p class="text-base font-bold">Accounts & Lists</p>
+                        <p class="text-base font-bold block lg:hidden">Profile</p>
+                        <p class="text-xs text-stone-400 hidden lg:block">Hello Om</p>
+                        <p class="text-base font-bold hidden lg:block">Accounts & Lists</p>
                     </div>
-                    <p class=" text-stone-400 pt-2"><i class="fa-solid fa-caret-down"></i></p>
+                    <p class=" text-stone-400 pt-2 hidden lg:block"><i class="fa-solid fa-caret-down"></i></p>
                 </div>
             </div>
             <div class="lg:col-span-2 py-1">
@@ -62,7 +63,7 @@
             <div class="lg:col-span-2 py-1">
                 <div class="h-full w-full flex items-center justify-center hover-border gap-2">
                     <p class="text-2xl"><i class="fa-solid fa-cart-arrow-down"></i></p>
-                    <p class="text-base font-bold">Cart</p>
+                    <p class="text-base font-bold hidden lg:block">Cart</p>
                 </div>
             </div>
             
