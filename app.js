@@ -1,32 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  const carousel = document.querySelector(".carousel");
-  const carouselTrack = document.querySelector(".carouselTrack");
-  const slides = Array.from(carouselTrack.children);
-  const nextbtn = document.querySelector('.next');
-  const backbtn = document.querySelector('.back');
+  const paging_track = document.querySelector(".paging-track");
+  const pages = Array.from(paging_track.children);
+  const nextbtn_paging = document.querySelector('.next-page');
+  const backbtn_paging = document.querySelector('.prev-page');
+  const page = document.querySelector('.page-no');
+  const gostart = document.querySelector('.gostart-btn')
 
-  let currentIndex = 0;
-  const slideCount = slides.length;
+  let currentpage = 0;
+  const pageCount = pages.length;
 
-  function goToSlide(index) {
-    currentIndex = (index + slideCount) % slideCount;
-    const offset = -currentIndex * 100;
-    carouselTrack.style.transform = `translateX(${offset}%)`;
+  function goTopage(index) {
+    currentpage = (index + pageCount) % pageCount;
+    page.innerHTML = `${currentpage + 1}`;
+    const offset = -currentpage * 100;
+    paging_track.style.transform = `translateX(${offset}%)`;
   }
 
-  nextbtn.addEventListener('click', () => {
-    goToSlide(currentIndex + 1);
+  nextbtn_paging.addEventListener('click', () => {
+    goTopage(currentpage + 1);
   });
 
-  backbtn.addEventListener('click', () => {
-    goToSlide(currentIndex - 1);
+  backbtn_paging.addEventListener('click', () => {
+    goTopage(currentpage - 1);
   });
 
-  // autoplay every 10s
-  setInterval(() => {
-    goToSlide(currentIndex + 1);
-  }, 10000);
+  gostart.addEventListener('click' , ()=>{
+    goTopage(0);
+  })
 
-  goToSlide(0);
+  goTopage(0);
 });

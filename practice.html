@@ -12,61 +12,281 @@
     }
     </style>
 </head>
-<body class="bg-[#1a1a1a] pt-50 px-30">
- <div class="relative w-full h-60 bg-white">
+<body class=" bg-[#1a1a1a] pt-50">
 
-  <!-- SCROLL AREA -->
-  <div class="carousel h-full overflow-x-auto overflow-y-hidden">
-
-    <div class="carouselTrack flex transition-transform duration-500 ease-in-out">
-
-      <!-- SLIDE -->
-      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+  <div class="bg-white text-black h-95 w-full">
+    <div class="h-10 w-full flex justify-between">
+      <p class="font-semibold text-xl pl-5"> browsing history</p>
+      <div class="flex flex-row gap-5 pr-5">
+        <p class="font-semibold">page <span class="page-no">1</span> of 3</p>
+        <button class="gostart-btn flex underline text-blue-500 cursor-pointer"><span class="hidden sm:block">Go to </span>start</button>
       </div>
-
-      <!-- SLIDE 2 -->
-      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+    </div>
+    <div class="h-85 w-full flex">
+      <div class="h-full w-12 flex justify-center items-center mx-3">
+        <button class="prev-page h-15 w-12 border border-gray-400 bg-white rounded-xl shadow cursor-pointer"> < </button>
       </div>
-
-      <!-- SLIDE 3 -->
-      <div class="min-w-full grid grid-cols-8 gap-2 px-4">
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet4.jpg" class="h-full w-full col-span-2 object-contain rounded" />
-        <img src="./images/pet-1.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-2.jpg" class="h-full w-full object-cover rounded" />
-        <img src="./images/pet-3.jpg" class="h-full w-full object-cover rounded" />
+      <div class="paging-carousel relative overflow-hidden w-full">
+        <div class="paging-track flex transition-transform duration-500 ease-in-out">
+          <!-- page 1 -->
+          <div class="flex gap-5 min-w-full"> 
+            <div class="flex flex-col">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="md:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="2xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+          </div>
+          <!-- page 2 -->
+          <div class="flex gap-5 min-w-full"> 
+            <div class="flex flex-col">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="md:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="2xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+          </div>
+          <!-- page 3 -->
+          <div class="flex gap-5 min-w-full"> 
+            <div class="flex flex-col">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="sm:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="md:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="lg:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+            <div class="2xl:flex flex-col hidden">
+              <div class="h-auto w-auto">
+                <img src="./images/paging-1.jpg" alt="">
+              </div>
+              <p class="text-blue-500 text-xs">Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily & </p>
+              <p class="text-red-500">-12% <span class="text-black">₹438.00</span></p>
+              <p class="text-xs">(₹438.00/100 g)</p>
+              <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">Limited Time deal</button>
+            </div>
+          </div>
+        </div>
       </div>
-
+      <div class="h-full w-12 flex justify-center items-center mx-3">
+        <button class="next-page h-15 w-12 border border-gray-400 bg-white rounded-xl shadow cursor-pointer"> > </button>
+      </div>
     </div>
   </div>
-
-  <!-- BUTTONS (FIXED VISUALLY) -->
-  <button class="back absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 p-2 rounded-full">
-    ◀
-  </button>
-
-  <button class="next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 p-2 rounded-full">
-    ▶
-  </button>
-
-</div>
-
 
 
 
