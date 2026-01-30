@@ -101,36 +101,120 @@ document.addEventListener('DOMContentLoaded' , function(){
     phonechange(0);
 })
 
-document.addEventListener('DOMContentLoaded', function () {
 
-  const paging_track = document.querySelector(".paging-track");
-  const pages = Array.from(paging_track.children);
-  const nextbtn_paging = document.querySelector('.next-page');
-  const backbtn_paging = document.querySelector('.prev-page');
-  const page = document.querySelector('.page-no');
-  const gostart = document.querySelector('.gostart-btn');
+let products = [];
 
-  let currentpage = 0;
-  const pageCount = pages.length;
+for(let i=0 ; i< 27 ;i++){
+    products.push({
+        img: "../images/paging-1.jpg",
+        tittle: "Dr. Sheth's Neem & Salicylic Acid Serum For Active Acne,Blackheads & Open Pores|2% Salicylic Acid & 1% Niacinamide|For Oily &" ,
+        discount: "-12%",
+        Price:"₹438.00",
+        UnitPrice: "(₹438.00/100 g)",
+        button:"Limited time deal"
+    });
+}
+ function createProductCard(products){
 
-  function goTopage(index) {
-    currentpage = (index + pageCount) % pageCount;
-    page.innerHTML = `${currentpage + 1}`;
-    const offset = -currentpage * 100;
-    paging_track.style.transform = `translateX(${offset}%)`;
-  }
+    return `
+    
+    <div class="flex flex-col flex-shrink-0">
+        <div class="h-auto w-auto">
+            <img src="${products.img}">
+        </div>
+        <p class="text-blue-500 w-[160px] text-xs line-clamp-4">${products.tittle}</p>
+        <p class="text-red-500">${products.discount}<span class="text-black">${products.Price}</span></p>
+        <p class="text-xs">${products.UnitPrice}</p>
+        <button class="h-[1.5rem] w-[8rem] bg-red-600 text-white text-xs rounded-sm">${products.button}</button>    
+    </div>
 
-  nextbtn_paging.addEventListener('click', () => {
-    goTopage(currentpage + 1);
-  });
+    `;
+ }
 
-  backbtn_paging.addEventListener('click', () => {
-    goTopage(currentpage - 1);
-  });
+const container = document.querySelector(".paging-track");
+const nextpage = document.querySelector(".next-page");
+const prevpage = document.querySelector(".prev-page");
+const pageNo = document.querySelector(".page-no");
+const totalPagesText = document.querySelector(".total-pages");
+const gostart_btn  = document.querySelector('.gostart-btn');
 
-  gostart.addEventListener('click' , ()=>{
-    goTopage(0);
-  })
+function getItemsPerPage() {
+    const w = window.innerWidth;
 
-  goTopage(0);
+    if (w >= 1536){
+        return 9;
+    }else if (w >= 1280){ 
+        return 8
+    }else if (w >= 1024){
+       return 6; 
+    } else if (w >= 768){
+        return 5;
+    } else if (w >= 640){
+        return 4;
+    } else{
+        return 2;
+    }
+}
+
+let currentPage = 0;
+let itemsPerPage = getItemsPerPage();
+let totalPages = Math.ceil(products.length / itemsPerPage);
+
+function renderPage() {
+
+    itemsPerPage = getItemsPerPage();
+    totalPages = Math.ceil(products.length / itemsPerPage);
+
+    if (currentPage >= totalPages){
+        currentPage = totalPages - 1;
+    } 
+
+    const start = currentPage * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    const visibleProducts = products.slice(start, end);
+
+    setTimeout(()=>{
+        container.innerHTML = "";
+    
+        visibleProducts.forEach(product => {
+            container.innerHTML += createProductCard(product);
+        });
+    
+    },1000);
+    pageNo.textContent = currentPage + 1;
+    totalPagesText.textContent = totalPages;
+
+    prevpage.disabled = currentPage === 0;
+    nextpage.disabled = currentPage === totalPages - 1;
+}
+prevpage.addEventListener("click", () => {
+
+    if (currentPage > 0) {
+        currentPage--;
+        renderPage();
+    }
 });
+nextpage.addEventListener("click", () => {
+
+    if (currentPage < totalPages - 1) {
+        currentPage++;
+        renderPage();
+    }
+});
+gostart_btn.addEventListener('click', () => {
+    currentPage = 0;
+    renderPage();
+});
+
+
+window.addEventListener("resize", () => {
+    const newItems = getItemsPerPage();
+    if (newItems !== itemsPerPage) {
+        renderPage();
+    }
+});
+renderPage();
+
+
+

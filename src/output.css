@@ -251,6 +251,51 @@
   .col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .container {
+    width: 100%;
+    @media (width >= 375px) {
+      max-width: 375px;
+    }
+    @media (width >= 460px) {
+      max-width: 460px;
+    }
+    @media (width >= 550px) {
+      max-width: 550px;
+    }
+    @media (width >= 640px) {
+      max-width: 640px;
+    }
+    @media (width >= 710px) {
+      max-width: 710px;
+    }
+    @media (width >= 768px) {
+      max-width: 768px;
+    }
+    @media (width >= 850px) {
+      max-width: 850px;
+    }
+    @media (width >= 920px) {
+      max-width: 920px;
+    }
+    @media (width >= 980px) {
+      max-width: 980px;
+    }
+    @media (width >= 1024px) {
+      max-width: 1024px;
+    }
+    @media (width >= 1100px) {
+      max-width: 1100px;
+    }
+    @media (width >= 1280px) {
+      max-width: 1280px;
+    }
+    @media (width >= 1700px) {
+      max-width: 1700px;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .m-1 {
     margin: calc(var(--spacing) * 1);
   }
