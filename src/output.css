@@ -323,18 +323,6 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .line-clamp-2 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-  .line-clamp-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-  }
   .line-clamp-4 {
     overflow: hidden;
     display: -webkit-box;
@@ -443,9 +431,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -479,32 +464,14 @@
   .w-90 {
     width: calc(var(--spacing) * 90);
   }
-  .w-160 {
-    width: calc(var(--spacing) * 160);
-  }
   .w-\[8rem\] {
     width: 8rem;
-  }
-  .w-\[10px\] {
-    width: 10px;
-  }
-  .w-\[16\] {
-    width: 16;
   }
   .w-\[65\%\] {
     width: 65%;
   }
-  .w-\[160\] {
-    width: 160;
-  }
   .w-\[160px\] {
     width: 160px;
-  }
-  .w-\[170px\] {
-    width: 170px;
-  }
-  .w-\[175px\] {
-    width: 175px;
   }
   .w-auto {
     width: auto;
@@ -655,9 +622,6 @@
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
-  .bg-\[\#1a1a1a\] {
-    background-color: #1a1a1a;
-  }
   .bg-\[\#2e3744\] {
     background-color: #2e3744;
   }
@@ -754,9 +718,6 @@
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
-  }
-  .pt-50 {
-    padding-top: calc(var(--spacing) * 50);
   }
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
@@ -988,11 +949,6 @@
       width: 75%;
     }
   }
-  .sm\:w-\[160px\] {
-    @media (width >= 640px) {
-      width: 160px;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 640px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1053,11 +1009,6 @@
   .md\:block {
     @media (width >= 768px) {
       display: block;
-    }
-  }
-  .md\:flex {
-    @media (width >= 768px) {
-      display: flex;
     }
   }
   .\36 xl\:block {
@@ -1243,11 +1194,6 @@
   .\32 xl\:-mt-\[22rem\] {
     @media (width >= 96rem) {
       margin-top: calc(22rem * -1);
-    }
-  }
-  .\32 xl\:flex {
-    @media (width >= 96rem) {
-      display: flex;
     }
   }
 }

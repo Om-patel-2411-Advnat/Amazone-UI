@@ -1,4 +1,4 @@
 bg-[#131921] text-white
 
 
-<img src="../images/live_sale.jpg" class="lg:h-full lg:w-full">
+<img src="./images/live_sale.jpg" class="lg:h-full lg:w-full">
